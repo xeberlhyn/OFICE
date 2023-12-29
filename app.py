@@ -110,8 +110,8 @@ app.logger.setLevel(logging.INFO)
 
 
 # get channel_secret and channel_access_token from your environment variable
-channel_secret = os.getenv('89c44971d85f42f346c60755f3ec7fad', None)
-channel_access_token = os.getenv('ks/r5d+zVhMhzF3NhX2Ru1pkagDJVZtEgD1twVOIrFeCvkaQFYHFTy4yYTP2l7zzRa8p8WnyXsCnzegpcd/WC3Dv11LeLprRTdA/HnESJHHK2bKgPQQFwrmWX3Wr+lArkAJNnPJDO/980tDuMo7H2wdB04t89/1O/w1cDnyilFU=', None)
+channel_secret = ('89c44971d85f42f346c60755f3ec7fad', None)
+channel_access_token = ('ks/r5d+zVhMhzF3NhX2Ru1pkagDJVZtEgD1twVOIrFeCvkaQFYHFTy4yYTP2l7zzRa8p8WnyXsCnzegpcd/WC3Dv11LeLprRTdA/HnESJHHK2bKgPQQFwrmWX3Wr+lArkAJNnPJDO/980tDuMo7H2wdB04t89/1O/w1cDnyilFU=', None)
 if channel_secret is None or channel_access_token is None:
     print('Specify LINE_CHANNEL_SECRET and LINE_CHANNEL_ACCESS_TOKEN as environment variables.')
     sys.exit(1)
